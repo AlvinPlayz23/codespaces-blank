@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SwiftRide Car Rentals — Drive Your Way</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Affordable car rentals, flexible pickup, modern fleet, and 24/7 support.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">SwiftRide</a>
+      <nav class="nav" id="nav">
+        <a href="#fleet">Fleet</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a class="btn primary" href="#book">Book Now</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Reliable car rentals for every journey</h1>
+          <p>Choose from economy to luxury vehicles, flexible pickup locations, and transparent pricing.</p>
+          <div class="hero-cta">
+            <a class="btn primary large" href="#book">Reserve a car</a>
+            <a class="btn" href="#fleet">See our fleet</a>
+          </div>
+        </div>
+        <div class="hero-form" id="book">
+          <form id="bookingForm">
+            <h3>Quick booking</h3>
+            <label>Pick-up
+              <input type="text" name="pickup" placeholder="City or airport" required>
+            </label>
+            <label>Drop-off
+              <input type="text" name="dropoff" placeholder="City or airport" required>
+            </label>
+            <label>Dates
+              <input type="text" name="dates" placeholder="Pick-up — Drop-off" required>
+            </label>
+            <label>Car type
+              <select name="cartype">
+                <option>Economy</option>
+                <option>Compact</option>
+                <option>SUV</option>
+                <option>Luxury</option>
+              </select>
+            </label>
+            <button class="btn primary" type="submit">Check availability</button>
+            <p class="muted">No credit card required to check availability.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <div class="feature">
+        <h4>Wide selection</h4>
+        <p>From fuel-efficient compacts to spacious SUVs and premium sedans.</p>
+      </div>
+      <div class="feature">
+        <h4>Transparent pricing</h4>
+        <p>No hidden fees — know what you pay upfront.</p>
+      </div>
+      <div class="feature">
+        <h4>24/7 Support</h4>
+        <p>Roadside assistance and customer service any time.</p>
+      </div>
+    </section>
+
+    <section id="fleet" class="fleet container">
+      <h2>Our fleet</h2>
+      <p class="muted">Handpicked vehicles for comfort, safety, and value.</p>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=900&q=60" alt="Economy car">
+          <div class="card-body">
+            <h3>Economy</h3>
+            <p>Fuel-efficient and budget friendly — from $29/day.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1549921296-3d68d9a2a8f0?auto=format&fit=crop&w=900&q=60" alt="Compact car">
+          <div class="card-body">
+            <h3>Compact</h3>
+            <p>Great for city driving — from $39/day.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1542367597-36f0f6cf3f85?auto=format&fit=crop&w=900&q=60" alt="SUV vehicle">
+          <div class="card-body">
+            <h3>SUV</h3>
+            <p>Spacious and safe — from $59/day.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=60" alt="Luxury car">
+          <div class="card-body">
+            <h3>Luxury</h3>
+            <p>Premium models for special occasions — from $99/day.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing container">
+      <h2>Pricing made simple</h2>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Daily</h3>
+          <p class="large">Starting $29</p>
+          <ul>
+            <li>Unlimited mileage options</li>
+            <li>Basic insurance included</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>Weekly</h3>
+          <p class="large">Save up to 25%</p>
+          <ul>
+            <li>Longer trips, better rates</li>
+            <li>Free additional driver</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>Monthly</h3>
+          <p class="large">Best value</p>
+          <ul>
+            <li>Flexible terms</li>
+            <li>Priority support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials container">
+      <h2>What customers say</h2>
+      <blockquote>
+        "Smooth pickup, clean cars, and excellent support — made our trip easy." — Jamie
+      </blockquote>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact us</h2>
+      <p>Email: <a href="mailto:hello@swiftride.example">hello@swiftride.example</a> · Phone: <a href="tel:+18001234567">(800) 123‑4567</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> SwiftRide Car Rentals — Drive Your Way</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
